@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>JavaScript confirmation</title>
+    <script>
+      // The function below will start the confirmation dialog
+      function confirmAction() {
+        let confirmAction = confirm("Bir tuşa basınız..");
+        if (confirmAction) {
+          alert("Tamama bastınız");
+        } else {
+          alert("İptale bastınız");
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <h1>Confirmation mesajını görüntüle</h1>
+    <button onclick="confirmAction()">Mesajı görüntüle..</button>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Alıştırmalar</h1>
+  Soru 1 :
+  <label id="soru1" for="">---</label> 
+  <input id="cevap1" type="text">
+  <button onclick="soru1()">Kontrol et</button>
+  <label id="sonuc1" for="">---</label><br><br>
+  <label id="puan" for="">Toplam puan:</label>
+<script>
+  var puan = 0;
+  var soru11 = Math.floor(Math.random()*10);
+  var soru12 = Math.floor(Math.random()*10);
+  var soru1metni = soru11+" + "+soru12+" = ?";
+  document.getElementById("soru1").innerHTML=soru1metni;
+
+  function soru1()
+    {
+      if (document.getElementById("cevap1").value == soru11+soru12) {
+        document.getElementById("sonuc1").innerHTML="Doğru";
+        puan += 10;
+        document.getElementById("puan").innerHTML="Toplam puan:"+puan;
+      } 
+      else {
+        document.getElementById("sonuc1").innerHTML="Yanlış";
+        puan -= 1;
+        document.getElementById("puan").innerHTML="Toplam puan:"+puan;
+      }
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>6C-WEB</title>
+	<link id="tema" href="css\aciktema.css" rel="stylesheet" type="text/css" />
+  <link rel="stylesheet" href="css\ortak.css">
+	<link rel="shortcut icon" href="https://scontent-otp1-1.xx.fbcdn.net/v/t1.6435-9/56490449_2027699330661120_4219233751122575360_n.png?_nc_cat=105&ccb=1-5&_nc_sid=174925&_nc_ohc=D0y0zlBRmhYAX__Kq1U&_nc_ht=scontent-otp1-1.xx&oh=fb5cc016ec1f969714879f67d9f0a943&oe=6182DFFB"
+	 type="image/x-icon">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pushster&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Moo+Lah+Lah&family=Yellowtail&display=swap" rel="stylesheet">
+</head>
+
+<style>
+  a{
+    font-family: 'Moo Lah Lah', cursive;
+    font-size:30px;
+  }
+</style>
+
+<body >
+
+	<button onmouseover="document.getElementById('tema').href='css/aciktema.css'">acik tema</button>
+  <button onmouseover="document.getElementById('tema').href='css/koyutema.css'">Koyu tema</button>
+  
+
+  <img onclick="document.getElementById('tema').href='css/koyutema.css'" height="30" src="resimler\moon-sharp.svg" alt="" style="position:fixed; top:50px; right:50px; ">
+  <img onclick="document.getElementById('tema').href='css/aciktema.css'"  height="30" src="resimler\sunny-sharp.svg" alt="" style="position:fixed; top:50px; right:100px; ">
+  <img onmouseover="alert('Burada ayarlar çıkacak')" src="resimler\settings-outline.svg" height="30" style="position:fixed; top:50px; right:150px;" alt="">
+
+
+    <ul>
+      <li>
+        <a href="">Anamenü</a>
+      </li>
+      <li>
+        <a href="oyunarsivi.html">Temalar</a>
+        <ul>
+          <a onclick="document.getElementById('tema').href='css/aciktema.css'">Açık tema</a>
+        </ul>
+        <ul>
+          <a onclick="document.getElementById('tema').href='css/koyutema.css'">Koyu tema</a> 
+        </ul>
+
+      </li>
+      <li>
+        <a href="oyunarsivi.html">Oyunlar</a>
+      </li>
+      <li>
+        <a href="">Filmler</a>
+      </li>
+      <li>
+        <a href="matematik.html">Matematik</a>
+
+      </li>
+    </ul>
+    <br>
+    <center>
+      <!--<h1 onmouseover="document.getElementById('abc').innerHTML='Bu bir başlıktır'" onmouseout="document.getElementById('abc').innerHTML=''" style="font-family: 'Pushster', cursive; font-size:50px; color:red;">6C WEB SİTESİNE HOŞ GELDİNİZ</h1>
+      -->
+      <h1 onmouseover="document.getElementById('abcde').src='https://cdn.shopify.com/s/files/1/1061/1924/files/Eye_Roll_Emoji_large.png?v=1541768914'" onmouseout="document.getElementById('abcde').src=''" style="font-family: 'Pushster', cursive; font-size:50px; color:red;">6C WEB SİTESİNE HOŞ GELDİNİZ</h1>
+      <label id="abc" for=""></label>
+      <img id="abcde" src="" alt="" height="50">
+      <br>
+      <div>
+        <a href="oyunarsivi.html">
+          <img src="https://www.mentalup.net/img/lp/eglenceli-oyunlar-banner.png" height="200" alt="">
+        </a>
+        <br>
+        <a href="oyunarsivi.html">Güncel oyunlar için tıklayınız</a>
+      </div>
+      <br><br><br>
+      <div>
+        <a href="matematik.html">
+          <img src="https://camo.githubusercontent.com/7098e9bcfa1623a4b7a2334d8cade337f05a3a7d0ad097940585e4fe51b790d4/687474703a2f2f7777772e6e656e6564697276696b69706564692e636f6d2f77702d636f6e74656e742f75706c6f6164732f323031382f30352f54616d2d5361792543342542316c617264612d342d2543342542302543352539466c656d2e6a7067" height="200" alt="">
+        </a>
+        <br>
+        <a href="matematik.html">Matematik kütüphanesi</a>
+      </div>    
+      <br><br>
+      <div>
+        <a href="videolar.html">
+          <img src="https://www.fernus.com.tr/wp-content/uploads/2018/06/videoicon.png" alt="">
+        </a><br>
+        <a href="Videolar.html">Videolar</a>
+      </div>
+      <br>
+    </center>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+<style>
+
+</style>

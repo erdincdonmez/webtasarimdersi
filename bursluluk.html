@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="Bursluluk.js">
+
+	</script>
+	<title>Bursluluk</title>
+</head>
+
+<body>
+	<h1>Bursluluk Kayıt Sayfasına Hoş Geldiniz</h1>
+	<div>
+		<label for="">Adınızı Giriniz:</label>
+    <input id="OgrenciAdi" type="text">
+    <button onclick="DosyayaYaz">Çarpma</button>
+  </div>
+</body>
+</html>
+<script>
+  var f = "bursluluk.txt";
+
+  writeTextFile(f, "Spoon")
+  writeTextFile(f, "Cheese monkey")
+  writeTextFile(f, "Onion")
+
+  function DosyayaYaz(afilename, output)
+  {
+    var txtFile =new File(afilename);
+    txtFile.writeln(output);
+    txtFile.close();
+  }
+</script>

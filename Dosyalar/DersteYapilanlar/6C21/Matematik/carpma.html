@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toplama</title>
+</head>
+<body>
+<center>
+  <h1>ÇARPMA</h1>
+  1.Sayı : <input id="s1" type="text"> <br><br>
+  2.Sayı : <input id="s2" type="text"> <br><br><br>
+  <button onclick="topla1()">Çarp</button>
+  <label id="sonuc" for="">--</label>
+    <h3>
+      <a href="https://webtasarimdersi.erdincdonmez.repl.co/Dosyalar/DersteYapilanlar/Genel/matematik/ikisayiyitopla.html">javaScript ile iki sayıyı toplayan program kodları</a>
+    </h3>
+
+  </center>
+  <script>
+    function topla1()
+    {
+      var a = parseInt(document.getElementById("s1").value);
+      var b = parseInt(document.getElementById("s2").value);
+      var toplamsonucu = a*b;
+      document.getElementById("sonuc").innerHTML=toplamsonucu;
+    }
+  </script>
+
+
+</body>
+</html>
+
+
+
+

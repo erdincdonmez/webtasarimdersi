@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  Youtube videosu ekleyebilmek için aldığınız video urlsini aşağıdaki gibi değiştirip iframe elementine yerleştirmeniz yeterli. <br>
+  iframe kodu : &lt;iframe src="https://youtube.com/embed/XVDAFGlcxOM" frameborder="0">Komik Bebek Videoları &lt;/iframe> <br>
+  Alınan video urlsi : https://youtu.be/XVDAFGlcxOM <br>
+  Video urlsinin yeni şekli : https://youtube.com/embed/XVDAFGlcxOM <br>
+  Eklenen kısımlar : youtu.be silinip yerine youtube.com yazılacak ve embed eklenecek.
+  İsterseniz  width="600" height="350" özellikleri ile iframe boyutunu ayarlayabilirsiniz.
+  <center>
+  <iframe src="https://youtube.com/embed/XVDAFGlcxOM" frameborder="0">Komik Bebek Videoları</iframe>
+  <hr>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/0GVExpdmoDs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+  </iframe>
+  <hr>
+  <iframe width="600" height="350" src="https://www.youtube.com/embed/XVDAFGlcxOM" title="YouTube video player" frameborder="Solid" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  <iframe width="600" height="350" src="https://www.youtube.com/embed/XVDAFGlcxOM" title="YouTube video player" frameborder="" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </center>
+  <iframe src="https://youtube.com/embed/XVDAFGlcxOM" frameborder="0">Komik Bebek Videoları </iframe>
+
+  <iframe width="420" height="345" src="http://www.youtube.com/embed/oHg5SJYRHA0?autoplay=1" frameborder="0" allowfullscreen></iframe>
+  <div><iframe id="existing-iframe-example"
+        width="640" height="360"
+        src="https://www.youtube.com/embed/M7lc1UVf-VE?enablejsapi=1"
+        frameborder="0"
+        style="border: solid 4px #37474F"
+></iframe>
+
+<script type="text/javascript">
+  var tag = document.createElement('script');
+  tag.id = 'iframe-demo';
+  tag.src = 'https://www.youtube.com/iframe_api';
+  var firstScriptTag = document.getElementsByTagName('script')[0];
+  firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+  var player;
+  function onYouTubeIframeAPIReady() {
+    player = new YT.Player('existing-iframe-example', {
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+    });
+  }
+  function onPlayerReady(event) {
+    document.getElementById('existing-iframe-example').style.borderColor = '#FF6D00';
+  }
+  function changeBorderColor(playerStatus) {
+    var color;
+    if (playerStatus == -1) {
+      color = "#37474F"; // unstarted = gray
+    } else if (playerStatus == 0) {
+      color = "#FFFF00"; // ended = yellow
+    } else if (playerStatus == 1) {
+      color = "#33691E"; // playing = green
+    } else if (playerStatus == 2) {
+      color = "#DD2C00"; // paused = red
+    } else if (playerStatus == 3) {
+      color = "#AA00FF"; // buffering = purple
+    } else if (playerStatus == 5) {
+      color = "#FF6DOO"; // video cued = orange
+    }
+    if (color) {
+      document.getElementById('existing-iframe-example').style.borderColor = color;
+    }
+  }
+  function onPlayerStateChange(event) {
+    changeBorderColor(event.data);
+  }
+</script></div>
+</body>
+</html>

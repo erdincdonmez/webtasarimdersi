@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toplama</title>
+</head>
+<body>
+  <center>
+    <h1>DÖRT İŞLEM</h1>
+        1.Sayı : <input id="kutu1" type="text" />   <br/><br/>
+        2.Sayı : <input id="kutu2" type="text" />   <br/><br/>
+        <button onclick="topla()">Topla</button>  
+        <button onclick="carp()">Çarp</button>   <br/><br/>
+        Toplam : <label id="toplam1">---</label> <br>
+        Çarpım : <label id="carpim1">---</label> <br>
+  </center>
+  <script language="javascript">
+    function topla()
+    {
+      var a=parseInt(document.getElementById("kutu1").value);
+      var b=parseInt(document.getElementById("kutu2").value);
+      var c = a+b;
+      //document.getElementById("toplam").value=c;
+      document.getElementById("toplam1").innerHTML=c;
+      }
+    function carp()
+    {
+      var a=parseInt(document.getElementById("kutu1").value);
+      var b=parseInt(document.getElementById("kutu2").value);
+      var c = a*b;
+      //document.getElementById("carpim").value=c;
+      document.getElementById("carpim1").innerHTML=c;
+      }
+  </script>
+</body>
+</html>
+
+İpucu : <br>
+Buton'un içine : style="margin-left:52px;" ekleyebilirsiniz. 
+
+
+
+

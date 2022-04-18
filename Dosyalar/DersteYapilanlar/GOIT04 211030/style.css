@@ -1,0 +1,21 @@
+
+
+  img{
+    height:200px;
+    margin: 20px;
+    border-style:solid;
+    border-radius:10px;
+  }
+  body{
+    background-color:	#FFECB3;
+  }
+  div{
+
+    background-color: #FFF176;
+    display : inline-block;
+    border-style:solid;
+    border-radius: 10px;
+    width: 28%;
+    padding: 20px;
+    margin:20px;
+  }

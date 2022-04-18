@@ -1,0 +1,48 @@
+  h2{
+    color:white;
+  }
+  div{
+    
+    background-color: DarkBlue;
+    border-style:solid;
+
+    border-color:Crimson ;
+    border-radius:10px;
+    padding:10px;
+    margin:20px;
+  }
+  body{
+    background-color:CornflowerBlue;
+  }
+  
+   ul { /*2.Adım : Madde işaretlerini kaldır*/
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+    
+    li { /* 3.Adım : Yan yana al */
+        float: left;
+    }
+    
+    li a { /* 4.Adım linkleri blok haline getir */
+        display: block;
+        padding:12px 14px;
+        background-color: #27ae60;
+    }
+    li a { /* 5.Adım : Menüdeki a elemenlerinin alt çizgilerini vs kaldırma */
+        color:white;
+        text-decoration:none; 
+    }
+    li a:hover{ /* 6.Adım : Menü elemanlarının üzerine gidince rengini değiştir */
+      background-color:#23834c; 
+    }
+    
+    li a:hover:not(.active) { /* 7.Adım : Aktif sayfa için */ 
+      background-color: #111;
+    }
+
+    .active { /* 7.Adım : Aktif sayfa için  */
+      background-color: #f39c12;
+    }

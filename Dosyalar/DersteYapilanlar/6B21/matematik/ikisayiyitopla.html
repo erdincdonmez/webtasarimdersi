@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <center>
+    <h1>Bu program iki sayıyı toplar</h1>
+    1.Sayı : <input id="asd" type="text"> <br><br>
+    2.Sayı : <input id="wsx" type="text"> <br><br>
+    <button onclick="topla()">Topla</button>
+    Toplam : <label id="rty" for="">---</label>
+  </center>
+<script>
+  function topla()
+  {
+    var rt = parseInt(document.getElementById("asd").value);
+    var bb = parseInt(document.getElementById("wsx").value);
+    var ct = rt + bb;
+    document.getElementById("rty").innerHTML = ct;
+  }
+</script>
+<br><br><br>
+<a href="https://webtasarimdersi.erdincdonmez.repl.co/Dosyalar/DersteYapilanlar/Genel/matematik/ikisayiyitopla.html">İki sayıyı toplayan programın JavaScript kodları için tıklayınız..</a>
+
+</body>
+</html>
+<style>
+  body{
+    background-color:#5ef2e8;
+  }
+</style>

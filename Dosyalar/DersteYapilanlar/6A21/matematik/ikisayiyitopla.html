@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+<center>
+  <h1>İKİ SAYIYI TOPLA</h1>
+  1.Sayı : <input id="s1" type="text"><br><br>
+  2.Sayı : <input id="s2" type="text"><br><br>
+  <button onclick="topla()">Topla</button>
+  Toplam : <label id="sonuc" for="">---</label>
+<script>
+  function topla(){
+    var ert = parseInt(document.getElementById("s1").value);
+    var qwe = parseInt(document.getElementById("s2").value);
+    var df = ert + qwe;
+    document.getElementById("sonuc").innerHTML = df;
+  }
+</script>
+</center>
+  
+</body>
+</html>

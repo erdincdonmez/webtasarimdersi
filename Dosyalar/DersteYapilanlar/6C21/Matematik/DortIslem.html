@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dort işlem</title>
+</head>
+<body>
+<center>
+  <h1>DÖRT İŞLEM</h1>
+  1.Sayı : <input id="s1" type="text"> <br><br>
+  2.Sayı : <input id="s2" type="text"> <br><br><br>
+  <button onclick="topla1()">Topla</button>
+  <label id="Toplam" for="">---</label><br><br>
+  <button onclick="carp()">Çarp</button>
+  <label id="Carpim" for="">---</label><br><br>
+  <button onclick="bol()">Böl</button>
+  <label id="xxx" for="">---</label>
+    <h3>
+      <a href="https://webtasarimdersi.erdincdonmez.repl.co/Dosyalar/DersteYapilanlar/Genel/matematik/ikisayiyitopla.html">javaScript ile iki sayıyı toplayan program kodları</a>
+    </h3>
+
+  </center>
+  <script>
+    function topla1()
+    {
+      var a = parseInt(document.getElementById("s1").value);
+      var b = parseInt(document.getElementById("s2").value);
+      var toplamsonucu = a+b;
+      document.getElementById("Toplam").innerHTML=toplamsonucu;
+    }
+    function carp()
+    {
+      var a = parseInt(document.getElementById("s1").value);
+      var b = parseInt(document.getElementById("s2").value);
+      var toplamsonucu = a*b;
+      document.getElementById("Carpim").innerHTML=toplamsonucu;
+    }
+    function bol()
+    {
+      var a = parseInt(document.getElementById("s1").value);
+      var b = parseInt(document.getElementById("s2").value);
+      var toplamsonucu = a/b;
+      document.getElementById("xxx").innerHTML=toplamsonucu;
+    }
+  </script>
+
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Web tasarım dersleri</title>
+</head>
+
+<body>
+	<a href="https://erdincdonmez.repl.co/">Geri dön</a>
+
+	<center>
+		<h1>Web tasarım dersleri</h1>
+		<hr>
+		<h3>
+			<div>
+				<a href="DersIcerigi.html">
+					<img src="https://www.weebakademi.com/1/Logolar/Web.png" height="200">
+        </a>
+        <br>
+        <a href="DersIcerigi.html">Ders içeriği</a>
+        
+      </div>
+      <br><br>
+      <div>
+        <a href="DersteYapilanlar.html">
+          <img src="https://panel.gelisim.edu.tr/assets/2021/resimler//Student-removebg-preview_3054604f05ca4ed7a7e7a5fe2c36777a.png" height="200" alt="">
+        </a> <br>
+        <a href="\DersteYapilanlar.html">Öğrenci çalışmaları</a>
+        
+      </div>
+      <div>
+        <a href="DersteYapilanlar.html">Derste Yapılanlar</a>      
+      </div>
+      <br><br>
+      <div>
+        <a href="https://erdincdonmez.repl.co/Programlar.html">
+          <img src="Dosyalar\resimler\apps1.png" height="200" alt="">
+        </a> <br>
+        <a href="https://erdincdonmez.repl.co/Programlar.html">Programlar</a>
+        
+      </div>
+      <br><br>
+      <!--
+      <div>
+        <a href="">
+        <iframe src="https://youtube.com/embed/eoGWGtPWHdE" frameborder="0"></iframe>
+        </a>
+      </div>
+      <br>
+      <br>
+      -->
+    <h1 onload="counter-plus" class="counter-display">(..)</h1>
+    <button class="counter-minus">-</button>
+    <button class="counter-plus">+</button>
+    <br><br>
+    <a href="bursluluk.html">Bursluluk</a>
+
+    <script>
+      let counterDisplayElem = document.querySelector('.counter-display');
+      let counterMinusElem = document.querySelector('.counter-minus');
+      let counterPlusElem = document.querySelector('.counter-plus');
+
+      let count = 0;
+
+      updateDisplay();
+
+      counterPlusElem.addEventListener("click",()=>{
+          count++;
+          updateDisplay();
+      }) ;
+
+      counterMinusElem.addEventListener("click",()=>{
+          count--;
+          updateDisplay();
+      });
+
+      function updateDisplay(){
+          counterDisplayElem.innerHTML = count;
+      };
+    </script>
+
+
+    </h3>
+  </center>
+</body>
+</html>
+<style>
+  //div{
+    //display: inline-block;
+    border-radius: 10px;
+    background-color: white;
+    transition:0.4s;
+    margin: 20px;
+    border: 1px solid #222222;
+  }
+</style>

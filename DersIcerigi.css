@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+a{
+  /*color:black;*/
+}
+
+body { margin:0; padding:0; overflow: hidden;}
+
+h1{
+  font-family: 'Roboto', sans-serif;
+}
+
+.sar { /*wrap*/
+  /*margin:10px;*/
+  
+  margin-bottom: 3px;
+}
+.baslik { /*header*/
+  /*position: relative;*/
+  position:fixed;
+  width: 100%;
+  height:55px;
+  margin-bottom:10px;
+  
+  /*background-color: GhostWhite ;*/
+  background-color: #333;
+  overflow: hidden;
+  vertical-align: middle;
+  padding-left : 10px;
+}
+.icerik { /*content*/
+/*  padding-left: 10px; */
+  overflow: hidden;
+  margin-top: 55px;
+  padding-top: 15px;
+  margin-left: 1%; 
+  width:78%;
+  
+  background-color:azure;
+  float:right;
+}
+.soltaraf{ /*sidebar*/
+padding-left: 3px;
+  margin-top: 55px;
+  width:20%;
+  background-color:whitesmoke;
+  float:left;
+  overflow-y: auto;
+  overscroll-behavior-y:inherit;
+  overflow-x:hidden;
+  
+  height: 43vw;
+}
+.alttaraf { /*footer*/
+  height:33px;
+  margin-top:10px;
+  background-color:snow;
+}
+
+.temizle { /*clear*/
+  clear:both;
+}
+
+@media screen and (max-width: 900px) {
+ .content, .sidebar{
+
+    width: 100%;
+
+    margin-top:10px;
+
+    }
+
+

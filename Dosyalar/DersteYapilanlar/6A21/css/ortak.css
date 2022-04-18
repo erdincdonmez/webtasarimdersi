@@ -1,0 +1,20 @@
+body{
+  background-image: url("https://w7.pngwing.com/pngs/94/856/png-transparent-gray-background-gray-decorative-pattern-background.png");
+  //background-repeat : repeat-y;
+  background-attachment: fixed;
+}
+/*body{
+  //background-color: red; 
+  /*background-image:url("https://images.freeimages.com/images/premium/small-comps/2887/28876568-prism-pattern-background.jpg");
+  background-repeat :no-repeat;
+  background-attachment: fixed;
+  background-position: left bottom;*/
+}*/
+img:hover{
+  border-style: solid;
+  
+}
+  a:hover{
+    background-color: red;
+  }
+  

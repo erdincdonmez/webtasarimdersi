@@ -1,0 +1,18 @@
+Ders çalışma için linkler
+https://docs.google.com/presentation/d/17m1l0_lczLtNM8nr2IxbQJ0p5qwfPPUEWvBlcK80jCk/edit#slide=id.g102c234e760_0_53
+
+
+CSS giriş sunusu
+
+
+ARKA PLAN EKLEME
+  Arka plan eklemek için css dosyasına body clası ekle bunun içine
+    background-image: url("resmin linkini ekle");
+
+HOVER EKLEME
+  Css dosyasına hover yapmak istediğimiz clasın hoverını yazıyoruz.
+  div:hover{
+
+  }
+
+  şeklinde eklenir.

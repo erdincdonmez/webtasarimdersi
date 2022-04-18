@@ -1,0 +1,10 @@
+body{
+  //background-color: black;
+  background-image: url("https://img.lovepik.com/photo/40007/2517.jpg_wh860.jpg");
+  background-repeat: repeat-x;
+  //background-position: right center;
+  background-attachment: fixed;
+  background-size: 300px 100px;
+  background-opacity: 0.5;
+}
+
