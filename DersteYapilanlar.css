@@ -1,0 +1,14 @@
+div{
+  border-style:solid;
+  border-color:gray;
+  display:inline-block;
+  vertical-align:top;
+  margin-top: 10px;  
+  padding:5px;
+}
+sabit{
+   //position: fixed;
+}
+icerik1{
+  //margin-top:250px;
+}
